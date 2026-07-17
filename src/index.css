@@ -1,0 +1,148 @@
+:root {
+  --cream: #fffaf4;
+  --cream-dark: #f8ecdf;
+  --blush: #fbe8e6;
+  --blush-dark: #f4d3d6;
+  --brown: #5b4640;
+  --brown-soft: #8a7168;
+  --gold: #d9a86c;
+  --gold-dark: #c08a52;
+  --gold-light: #f0dcc0;
+  --rose: #d98a99;
+  --rose-dark: #c96f82;
+  --white: #ffffff;
+  --text-muted: #a99184;
+  --radius: 20px;
+  --container: 1152px;
+  --shadow-soft: 0 12px 32px rgba(91, 70, 64, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--gold-dark);
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--brown);
+  color: var(--cream);
+}
+
+.btn-primary:hover {
+  background: var(--gold-dark);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--gold-light);
+  color: var(--brown);
+}
+
+.btn-outline:hover {
+  background: var(--cream-dark);
+}
+
+.section {
+  padding: 72px 0;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 30;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  background: var(--brown);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(91, 70, 64, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .fab {
+    display: none;
+  }
+}

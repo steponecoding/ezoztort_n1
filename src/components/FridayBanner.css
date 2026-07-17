@@ -1,0 +1,7 @@
+.friday-banner {
+  background: var(--gold-dark);
+  color: var(--cream);
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}

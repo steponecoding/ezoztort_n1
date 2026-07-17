@@ -1,0 +1,117 @@
+@import "./Modal.css";
+
+.modal__form {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal__product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border: 1px solid var(--gold-light);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.modal__product img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal__product-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modal__product-price {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.modal__product-remove {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+}
+
+.modal__intro {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brown-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--gold-light);
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: var(--white);
+  color: var(--brown);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+}
+
+.field textarea {
+  resize: none;
+}
+
+.modal__submit {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.modal__divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 4px 0;
+}
+
+.modal__divider::before,
+.modal__divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--cream-dark);
+}
+
+.modal__quick-links {
+  display: flex;
+  gap: 10px;
+}
+
+.modal__quick-link {
+  flex: 1;
+}
